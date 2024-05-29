@@ -1,5 +1,5 @@
 import java.util.*;
-public class weakHashMap
+public class WeakHashMap
 {
 public static void main(String []args)
 {
@@ -14,6 +14,6 @@ whm.put(four,fourValue);
 System.out.println(whm);
 four=null;
 System.gc();
-System.out.println(whm);
+System.out.println("Weak Hash Map after the enrty of null key is removed:"+whm);
 }
 }
